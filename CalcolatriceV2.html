@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolatrice</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light d-flex justify-content-center align-items-center vh-100">
+    <div class="calcolatrice bg-white p-4 rounded shadow-sm" style="width: 300px;">
+        <input type="text" id="schermo" class="form-control text-end mb-3" placeholder="0" readonly>
+        
+        <div class="buttons row g-2">
+            <div class="col-3">
+                <button onclick="cancella()" id="cancella" class="btn btn-danger w-100">Canc</button>
+            </div>  
+            <div class="col-3"><button onclick="aggiungi('1')" class="btn btn-outline-dark w-100">1</button></div>
+            <div class="col-3"><button onclick="aggiungi('2')" class="btn btn-outline-dark w-100">2</button></div>
+            <div class="col-3"><button onclick="aggiungi('3')" class="btn btn-outline-dark w-100">3</button></div>
+
+            <div class="col-3"><button onclick="aggiungi('4')" class="btn btn-outline-dark w-100">4</button></div>
+            <div class="col-3"><button onclick="aggiungi('5')" class="btn btn-outline-dark w-100">5</button></div>
+            <div class="col-3"><button onclick="aggiungi('6')" class="btn btn-outline-dark w-100">6</button></div>
+            <div class="col-3"><button onclick="aggiungi('+')" class="btn btn-primary w-100">+</button></div>
+
+            <div class="col-3"><button onclick="aggiungi('7')" class="btn btn-outline-dark w-100">7</button></div>
+            <div class="col-3"><button onclick="aggiungi('8')" class="btn btn-outline-dark w-100">8</button></div>
+            <div class="col-3"><button onclick="aggiungi('9')" class="btn btn-outline-dark w-100">9</button></div>
+            <div class="col-3"><button onclick="aggiungi('-')" class="btn btn-primary w-100">-</button></div>
+
+            <div class="col-3"><button onclick="aggiungi('0')" class="btn btn-outline-dark w-100">0</button></div>
+            <div class="col-3"><button onclick="aggiungi('*')" class="btn btn-primary w-100">*</button></div>
+            <div class="col-3"><button onclick="aggiungi('/')" class="btn btn-primary w-100">/</button></div>
+            <div class="col-3">
+                <button onclick="risultato()" id="uguale" class="btn btn-success w-100">=</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="scriptCalc2.js"></script>
+</body>
+</html>
