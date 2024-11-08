@@ -13,11 +13,11 @@ function risultato() {
     const schermo = document.getElementById("schermo");
     const espressione = schermo.value;
 
-    // Calcoliamo il risultato dell'espressione usando eval
+
     const risultato = eval(espressione);
     
-    // Assegniamo il risultato all'input (se valido)
-    schermo.value = isNaN(risultato) ? "" : risultato;
+
+
 }
 
 
