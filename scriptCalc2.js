@@ -11,11 +11,7 @@ function cancella() {
 
 function risultato() {
     const schermo = document.getElementById("schermo");
-    try {
-        schermo.value = eval(schermo.value);
-    } catch (error) {
-        schermo.value = "Errore";
-    }
+    schermo.value = eval(schermo.value);
 }
 
 
