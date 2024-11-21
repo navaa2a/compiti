@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anagrafica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body class="bg-light">
+    <div class="container my-5">
+        <div class="card p-4 shadow-sm">
+            <h1 class="text-center mb-4">Anagrafica</h1>
+            <div class="mb-3">
+                <input placeholder="Nome" type="text" id="Nome" class="form-control mb-2">
+                <input placeholder="Cognome" type="text" id="Cognome" class="form-control mb-2">
+                <input placeholder="Indirizzo" type="text" id="Indirizzo" class="form-control mb-2">
+                <input placeholder="Città" type="text" id="Città" class="form-control mb-2">
+                <input placeholder="Email" type="text" id="Email" class="form-control mb-2">
+            </div>
+            <div class="text-center">
+                <input class="btn btn-primary" type="button" value="AGGIUNGI" onclick="stampa()">
+            </div>
+        </div>
+        <div class="mt-4">
+            <table id="tabella" class="table table-striped table-bordered">
+                    <tr>
+                        <th>NOME</th>
+                        <th>COGNOME</th>
+                        <th>INDIRIZZO</th>
+                        <th>CITTA</th>
+                        <th>EMAIL</th>
+                    </tr>
+            </table>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
