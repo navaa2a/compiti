@@ -62,7 +62,7 @@ function disegna() {
 
     let xgrafico;
     let ygrafico;
-
+    let indiceMin = 0
     let indiceMax = Math.ceil(Math.max(...datiNumerici) / 1000) * 1000;
 
     let scalaY = 560 / indiceMax;
@@ -71,7 +71,7 @@ function disegna() {
     grafico.beginPath(); 
     for (let y = 0; y < righe.length - 1; y++) {
         xgrafico = ((840 / (righe.length - 1)) * (y+1));  
-        ygrafico = 580 - (scalaY * (datiNumerici[y] - indiceMin)); 
+        ygrafico = 580 - (scalaY * (datiNumerici[y] - indiceMib)); 
    
         if (y === 0) {
             grafico.moveTo(xgrafico, ygrafico);
