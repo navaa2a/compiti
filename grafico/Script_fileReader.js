@@ -62,10 +62,10 @@ function disegna() {
 
     let xgrafico;
     let ygrafico;
-    let indiceMib = 0
+    let indiceMin = 0
     let indiceMax = Math.ceil(Math.max(...datiNumerici) / 1000) * 1000;
-
-    let scalaY = 560 / indiceMax;
+    let differenza = indiceMax - indiceMin;
+    let scalaY = 560 / differenza;
 
     
     grafico.beginPath(); 
