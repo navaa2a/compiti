@@ -64,13 +64,14 @@ function disegna() {
     let ygrafico;
 
     let indiceMax = Math.ceil(Math.max(...datiNumerici) / 1000) * 1000;
+    let indiceMib = 0
     let scalaY = 560 / indiceMax;
 
     
     grafico.beginPath(); 
     for (let y = 0; y < righe.length - 1; y++) {
         xgrafico = ((840 / (righe.length - 1)) * (y+1));  
-        ygrafico = 580 - (scalaY * datiNumerici[y]); 
+        ygrafico = 580 - (scalaY * (datiNumerici[y] - indiceMin)); 
    
         if (y === 0) {
             grafico.moveTo(xgrafico, ygrafico);
