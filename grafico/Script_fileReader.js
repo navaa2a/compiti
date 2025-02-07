@@ -62,7 +62,7 @@ function disegna() {
 
     let xgrafico;
     let ygrafico;
-    let indiceMin = 0
+    let indiceMin = Math.floor(Math.min(...datiNumerici) / 1000) * 1000;
     let indiceMax = Math.ceil(Math.max(...datiNumerici) / 1000) * 1000;
     let differenza = indiceMax - indiceMin;
     let scalaY = 560 / differenza;
