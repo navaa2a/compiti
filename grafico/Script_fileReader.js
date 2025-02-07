@@ -64,7 +64,7 @@ function disegna() {
     let ygrafico;
 
     let indiceMax = Math.ceil(Math.max(...datiNumerici) / 1000) * 1000;
-    let indiceMib = 0
+    let indiceMin = 0
     let scalaY = 560 / indiceMax;
 
     
