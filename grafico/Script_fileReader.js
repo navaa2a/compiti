@@ -6,11 +6,6 @@ const canvas = document.getElementById("grafico");
 const grafico = canvas.getContext("2d");
 
 function leggi(input) {
-    if (input.files.length === 0) {
-        alert("Seleziona un file valido.");
-        return;
-    }
-
     let file = input.files[0];
     let reader = new FileReader();
 
@@ -56,7 +51,6 @@ function inserisci() {
 
 function disegna() {
 
-
     grafico.clearRect(0, 0, canvas.width, canvas.height);
     grafico.beginPath();
     grafico.moveTo(865, 580);  
@@ -69,32 +63,17 @@ function disegna() {
     let xgrafico;
     let ygrafico;
 
-
-    for (let x = 1; x < righe.length; x++) {
-        xgrafico = ((840 / (righe.length - 1)) * x); 
-        grafico.fillText(tabella[x][0].replace(/"/g, ' '), xgrafico-10, 595);
-    }
-
-
     let indiceMax = Math.ceil(Math.max(...datiNumerici) / 1000) * 1000;
     let indiceMin = Math.floor(Math.min(...datiNumerici) / 1000) * 1000;
     let differenza = indiceMax - indiceMin;
     let scalaY = 560 / differenza;
 
-
-    for (let i = 0; i <= 5; i++) { 
-        let yPos = 580 - (scalaY * (i * differenza / 5));
-        grafico.fillText(indiceMin + (i * differenza / 5), 0, yPos);
-    }
-
     
     grafico.beginPath(); 
     for (let y = 0; y < righe.length - 1; y++) {
         xgrafico = ((840 / (righe.length - 1)) * (y+1));  
-        ygrafico = 580 - (scalaY * (datiNumerici[y] - indiceMin)); //calcolo il valore di y mettendo 
-        // in scala il valore attuale meno l'indice minimo
-
-        
+        ygrafico = 580 - (scalaY * (datiNumerici[y] - indiceMin)); 
+   
         if (y === 0) {
             grafico.moveTo(xgrafico, ygrafico);
             
