@@ -59,7 +59,7 @@ function disegna() {
     grafico.stroke();
 
 
-    grafico.font = "12px Arial";
+
     let xgrafico;
     let ygrafico;
 
