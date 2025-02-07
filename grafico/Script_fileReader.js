@@ -70,7 +70,7 @@ function disegna() {
     grafico.beginPath(); 
     for (let y = 0; y < righe.length - 1; y++) {
         xgrafico = ((840 / (righe.length - 1)) * (y+1));  
-        ygrafico = 580 - (scalaY * (datiNumerici[y] - indiceMin)); 
+        ygrafico = 580 - (scalaY * datiNumerici[y]); 
    
         if (y === 0) {
             grafico.moveTo(xgrafico, ygrafico);
