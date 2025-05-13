@@ -1,0 +1,101 @@
+[
+    {
+      "nome": "Sennheiser HD 800 S",
+      "prezzo": 1599,
+      "immagine": "./immagini/sennheiser_hd800s.jpg",
+      "specifiche": {
+        "Tipo": "Aperte",
+        "Impedenza": "300 Ohm",
+        "Risposta in frequenza": "4-51000 Hz",
+        "Connettore": "XLR-3/Jack 6.3mm"
+      }
+    },
+    {
+      "nome": "Beyerdynamic DT 1990 Pro",
+      "prezzo": 599,
+      "immagine": "./immagini/beyerdynamic_dt1990.jpg",
+      "specifiche": {
+        "Tipo": "Aperte",
+        "Impedenza": "250 Ohm",
+        "Risposta in frequenza": "5-40000 Hz",
+        "Connettore": "Jack 3.5/6.3mm"
+      }
+    },
+    {
+      "nome": "Audio-Technica ATH-M50x",
+      "prezzo": 149,
+      "immagine": "./immagini/audio-technica_m50x.jpg",
+      "specifiche": {
+        "Tipo": "Chiuse",
+        "Impedenza": "38 Ohm",
+        "Risposta in frequenza": "15-28000 Hz",
+        "Connettore": "Jack 3.5mm"
+      }
+    },
+    {
+      "nome": "Sony WH-1000XM5",
+      "prezzo": 399,
+      "immagine": "./immagini/sony_wh1000xm5.jpg",
+      "specifiche": {
+        "Tipo": "Wireless (ANC)",
+        "Autonomia": "30 ore",
+        "Risposta in frequenza": "4-40000 Hz",
+        "Connettività": "Bluetooth 5.2"
+      }
+    },
+    {
+      "nome": "Bose QuietComfort 45",
+      "prezzo": 329,
+      "immagine": "./immagini/bose_qc45.jpg",
+      "specifiche": {
+        "Tipo": "Wireless (ANC)",
+        "Autonomia": "24 ore",
+        "Risposta in frequenza": "20-20000 Hz",
+        "Connettività": "Bluetooth 5.1"
+      }
+    },
+    {
+      "nome": "Focal Utopia",
+      "prezzo": 3999,
+      "immagine": "./immagini/focal_utopia.jpg",
+      "specifiche": {
+        "Tipo": "Aperte",
+        "Impedenza": "80 Ohm",
+        "Risposta in frequenza": "5-50000 Hz",
+        "Connettore": "XLR/Jack 6.3mm"
+      }
+    },
+    {
+      "nome": "Audeze LCD-X",
+      "prezzo": 1199,
+      "immagine": "./immagini/audeze_lcdx.jpg",
+      "specifiche": {
+        "Tipo": "Aperte",
+        "Tecnologia": "Planar magnetic",
+        "Risposta in frequenza": "10-50000 Hz",
+        "Connettore": "Jack 6.3mm"
+      }
+    },
+    {
+      "nome": "Grado SR325x",
+      "prezzo": 295,
+      "immagine": "./immagini/grado_sr325x.jpg",
+      "specifiche": {
+        "Tipo": "Aperte",
+        "Impedenza": "38 Ohm",
+        "Risposta in frequenza": "18-24000 Hz",
+        "Connettore": "Jack 6.3mm"
+      }
+    },
+    {
+      "nome": "Hifiman Sundara",
+      "prezzo": 349,
+      "immagine": "./immagini/hifiman_sundara.jpg",
+      "specifiche": {
+        "Tipo": "Aperte",
+        "Tecnologia": "Planar magnetic",
+        "Risposta in frequenza": "6-75000 Hz",
+        "Connettore": "Jack 3.5mm"
+      }
+    }
+]
